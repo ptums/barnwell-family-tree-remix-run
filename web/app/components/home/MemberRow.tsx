@@ -10,7 +10,7 @@ const MemberRow = ({ members, generation, color }: Props) => {
   const defaultStyling =
     "mr-2 mb-3 md:mb-0 shadow-md py-4 px-3 leading-4 rounded text-white text-lg font-bold";
   let buttonStyle = "";
-  console.log({ color });
+  ({ color });
   switch (color) {
     case "blue":
       buttonStyle = `${defaultStyling} bg-sky-500 hover:bg-sky-400`;

@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import SimpleReactLightbox from 'simple-react-lightbox'
 import styles from "~/styles/app.css";
 
 export function links() {
@@ -33,10 +34,13 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <SimpleReactLightbox>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        </SimpleReactLightbox>
+       
       </body>
     </html>
   );
