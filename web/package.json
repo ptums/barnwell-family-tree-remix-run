@@ -19,13 +19,18 @@
     "validate": "run-p \"test -- --run\" lint typecheck"
   },
   "dependencies": {
-    "@prisma/client": "3.12.0",
+    "@prisma/client": "^3.14.0",
     "@remix-run/node": "^1.4.1",
     "@remix-run/react": "^1.4.1",
     "@remix-run/vercel": "^1.4.1",
     "@vercel/node": "^1.14.0",
+    "bson": "^4.6.4",
+    "data-to-json": "^1.0.5",
+    "graphql": "^16.4.0",
+    "graphql-request": "^4.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-draggable": "^4.4.5",
     "simple-react-lightbox": "^3.6.9-0"
   },
   "devDependencies": {
@@ -34,6 +39,7 @@
     "@remix-run/serve": "^1.4.1",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "@types/simple-react-lightbox": "^3.6.1",
     "autoprefixer": "^10.4.4",
     "concurrently": "^7.1.0",
     "cross-env": "^7.0.3",
@@ -42,7 +48,7 @@
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.10",
-    "prisma": "^3.12.0",
+    "prisma": "^3.14.0",
     "tailwindcss": "^3.0.24",
     "typescript": "^4.5.5"
   },
