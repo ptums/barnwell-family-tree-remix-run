@@ -1,1 +1,0 @@
-export const IMAGE_BASE_URL: string = "https://res.cloudinary.com/tumulty-web-services";

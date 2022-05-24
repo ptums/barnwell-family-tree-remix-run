@@ -1,11 +1,24 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
+
+
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  media: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      backgroundImage: {
-        'tree-background': "url('./images/tree-background.png')",
-      }
+    fontFamily: {
+      sans: ['PT Serif', ...defaultTheme.fontFamily.sans],
+    },
+    backgroundImage: {
+      'tree-background': "url('/images/tree-background.png')",
+    },
+    colors: {
+      ...colors,
     },
   },
+  variants: {
+    extend: {},
+  },
   plugins: [],
-};
+}
